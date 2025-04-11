@@ -1,21 +1,22 @@
 <html>
   <center>
     <H1>Be cautious and proceed with caution</H1>
-    <button onclick="jermy()">Click here to see something creepy.</button>
+    <button onclick="jermy()">enter the password for something creepy</button>
     <img id="creepy" />
-    <input id"hhh"></input
+    <input type="password" id="hhh" />
   </center>
   <script>
     function jermy() {
+      if(document.getElementById("hhh").value=="jermy"){
       alert("You are being hacked by Jermy");
       document.getElementById("creepy").src = "https://i.postimg.cc/sX3dPwcC/Screenshot-2025-04-11-12-05-58-PM.png";
     }
 }
   </script>
 <style>
-  .hhh{
+  #hhh{
     width:30px;
     height:20px;
   }
 </style>
-</html
+</html>
