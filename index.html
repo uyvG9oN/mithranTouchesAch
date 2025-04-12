@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
@@ -8,31 +9,39 @@
     <title>niggersite</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
-  <body="https://warontherocks.com/wp-content/uploads/2015/11/Anon-ISIL-1024x616.jpg">
+  <body>
     <center>
-      <h1>Be cautious and proceed with caution</h1>
+      <h1 style="color:red;">Be cautious and proceed with caution</h1>
       <hr>
       <br>
       <img id="creepy">
       <br>
       <br>
+      <div id="popup"><span><button id="buttonyes" style="font-size:20px;">yes</button><button id="buttonno" style="font-size:20px;">no</button></span><br><h4 style="font-size:30px; font-weight:bold;">are you sure you want to visit creepy j-moneyturkey?</h4></div>
       <br>
       <br>
-      <br>
-      <br>
-      <input placeholder="enter secret nigger jermy code" type="password" id="hhh">
-      <button onclick="jermy()">enter password</button>
-      <div>
-        <button class="btn btn-danger" onclick="dangerzone()">!!!</button>
-        <h2>do not click. this is the dangerzone to the dangerzone!!! <span class="material-symbols-outlined"> release_alert </span>
+      <br><div>
+      <input style="font-size:18px; font-weight:bold; color:red;" placeholder="enter secret nigger jermy code" type="password" id="hhh">
+      <button style="font-size:18px; border:5px solid; font-weight:bold; color:red;" onclick="jermy()">submit </button><br><br><br><br>
+      
+        <button style="width:auto; font-weight:bold; font-size:20px;" class="btn btn-danger" onclick="uSure()">dontClick</button><br><br><br>
+        
+        <h2 style="color:red;">do not click. this is the dangerzone to the dangerzone!!! <span class="glyphicon glyphicon-alert"></span><span class="glyphicon glyphicon-alert"></span>
         </h2>
-      </div>
+      
     </center>
     <script>
-      function dangerzone() {
-        window.open("");
+      function uSure(){
+      document.getElementById("popup").style.display="block";
       }
-
+      function buttonyes(){
+      window.location.replace("");
+      }
+      function buttonno()
+      {
+      alert("go kil yourself loser then");
+      window.location.replace("https://pornhub.com");
+      }
       function jermy() {
         if (document.getElementById("hhh").value == "jermy") {
           alert("mithran is a fucking retarded loser that no one likes");
@@ -43,14 +52,32 @@
       }
     </script>
     <style>
+    body{
+  background-image: url("https://warontherocks.com/wp-content/uploads/2015/11/Anon-ISIL-1024x616.jpg") !important;
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-color:black;
+    }
+    #popup{
+    display:none;
+            position: absolute;
+            top: 20px; 
+            left: 20px;
+            width: 200px; 
+            height: 200px; 
+            background-color: red; 
+            z-index: 1; 
+    }
       #hhh {
-        width: 190px;
+        width: 280;
         height: 30px;
+        font-size:20px;
+        margin:30px;
       }
 
       #creepy {
-        width: 200px;
-        height: 190px;
+        width: 490px;
+        height: 360px;
       }
     </style>
     </body>
